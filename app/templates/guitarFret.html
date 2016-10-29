@@ -1,9 +1,195 @@
-<div id='guitarFret'class=''style='height:100%;border:1px solid black;padding:0;'>
+<div id='guitarFret'class=''style='height:100%;padding:0;'ng-init='controlSwitch = false;guitarSwitch = true; leftySwitch = false;tuningSwitch = true;'ng-model='changeScale(pickedScale,musicRoot)'>
 
 	<!-- DESKTOP -->
-	<div id='desk'class='hidden-sm hidden-xs'style='height:100%;background:url(images/guitar/fretboard.png)no-repeat;background-size:100% 80%;padding:0;'>
-		<g-String class='col-md-12 col-lg-12'style='padding:0;'></g-String>
+	<div id='desk'class='hidden-sm hidden-xs'style=''>
+		<div id='gFretControlSwitch'class='col-md-12'style=''>
+			<div ng-click='controlSwitch = false 'id=''class='col-md-2'style=''>
+			Controls
+			
+			</div>
+			<div ng-click='controlSwitch = true'id=''class='col-md-2'style=''>
+			How it works
+			
+			</div>
+			
+		</div>
+		<div ng-show='controlSwitch == false'id='gFretControl'class='col-md-12'style=''>
+			<div id='gFretStatus'class='col-md-6'style=''>
+				<div ng-click='guitarSwitch = false'id=''class='col-md-4'style=''ng-class='{highLight:guitarSwitch == false}'>
+				
+					<div id=''class='col-md-12'style=''>
+						<div id=''class='col-md-12'style=''>
+						Tuning
+						
+						</div>
+						<div id=''class='col-md-12'style='margin-bottom:2%;'>
+						Current Tuning :
+						
+						</div>
+						<div ng-repeat='string in strings track by $index'id=''class='col-md-12'style=''>
+						{{stringName[$index]}} is tuned to: {{musicNotes[string]}}
+						
+						
+						</div>
+				
+					</div>
+				
+				</div>
+				<div ng-click='guitarSwitch = true'id=''class='col-md-4'style=''ng-class='{highLight:guitarSwitch == true}'>
+					<div id=''class=''style=''>
+						<div id=''class='col-md-12'style=''>
+						Scale
+						
+						</div>
+						<div id=''class='col-md-12'style=''>
+						Current Root: {{musicNotes[musicRoot]}}
+						
+						</div>
+						<div id=''class='col-md-12'style=''>
+						Current Scale: {{scaleName}}
+						
+						</div>
+						<div id=''class='col-md-12'style='padding:0;'>
+							<div id=''class='col-md-12'style=''>
+							Notes Used:
+							
+							</div>
+							<div id=''class='col-md-12'style='padding:0;'>
+								<div ng-repeat='note in currentScale track by $index'id=''class='col-md-6'style='background:{{scaleColors[$index]}};color:Black;'>
+									{{musicNotes[note]}} {{scaleInterNames[$index]}}
+								
+								
+								</div>
+							
+							</div>
+						
+						</div>
+					</div>
+					
+					
+
+				</div>
+				<div id='etcControls'class='col-md-4'style=''>
+						<div id=''class='col-md-12'style=''>
+							<div id=''class='col-md-6'style=''ng-click='musicNotes = musicFlats;noteSwitched = true;'ng-class='{highLight: noteSwitched == true}'>
+								Flats 
+							
+							</div>
+							<div id=''class='col-md-6'style=''ng-click='musicNotes = musicSharps;noteSwitched = false;'ng-class='{highLight: noteSwitched == false}'>
+								Sharps
+							
+							</div>
+						
+						</div>
+						<div id=''class='col-md-12'style='margin-top:5%;'>
+							<div id=''class='col-md-6'style=''ng-click='lefty = true'ng-class='{highLight:lefty == true}'>
+							Lefty
+							
+							</div>
+							<div id=''class='col-md-6'style=''ng-click='lefty = false'ng-class='{highLight:lefty == false}'>
+							Righty
+							
+							</div>
+						
+						</div>
+						<div id=''class='col-md-12'style=''>
+						
+						
+						</div>
+					
+					</div>
+
+			</div>
+			<div id='gFretGuitarControls'class='col-md-6'style='border:1px solid black;'>
+			 	<div ng-show='guitarSwitch == false'id=''class='col-md-12'style=''>
+			 		<div id='tuneSwitch'class='col-md-12'style=''>
+			 			<div ng-click='tuningSwitch = false'id=''class='col-md-6'style=''ng-class='{highLight: tuningSwitch == false}'>
+			 				Individual 
+			 			
+			 			</div>
+			 			<div ng-click='tuningSwitch = true'id=''class='col-md-6'style=''ng-class='{highLight: tuningSwitch == true}'>
+			 				Group
+			 			
+			 			</div>
+			 		
+			 		</div>
+			 		<div ng-show='tuningSwitch == false;'id=''class='col-md-12'style=''>
+			 			<div ng-repeat='strin in stringName track by $index'id=''class=''style=''ng-init='order = $index'>
+			 				<div id=''class='col-md-12'style=''>
+			 					{{strin}}
+			 				
+			 				</div>
+			 				<div ng-repeat='note in musicNotes'id=''class='col-md-1'style='border:1px solid black;width:4%;padding:0;margin-left:2%;text-align:center;'ng-click='changeNote(order,note)'ng-class='{highLight: $index == strings[order]} '>
+			 				{{note}}
+			 				
+			 				
+			 				</div>
+			 			
+			 			
+			 			</div>
+			 		
+			 		</div>
+			 		<div ng-show='tuningSwitch == true' id=';'class='col-md-12'style=''>
+			 			<div ng-repeat='tune in tunings'id=''class='col-md-3 tuneStyle'style='height:6vh;border:1px solid black;'ng-click='changeGroup(tune.forumla);'>
+			 			
+			 				{{tune.name}}
+			 			
+			 			</div>
+			 		
+			 		</div>
+			 	
+			 	</div>
+			 	<div ng-show='guitarSwitch == true'id=''class='col-md-12'style=''>
+			 		<div id='scaleRoot'class='col-md-12'style=''>
+			 			<div id=''class='col-md-12'style='border-bottom:4px solid black;'>
+			 			Root:
+			 			
+			 			</div>
+			 			<div ng-repeat='note in musicNotes track by $index'id=''class='col-md-1'style=''ng-click='pickTone($index)'>
+			 			{{note}}
+			 			
+			 			
+			 			</div>
+			 		
+			 		</div>
+			 		<div id='scalesChange'class='col-md-12'style=''>
+			 			<div id=''class='col-md-12'style='border-bottom:4px solid black;'>
+			 			Scales:
+			 			
+			 			</div>
+			 			<div ng-click='pickScale(scale)'ng-repeat='scale in allScale track by $index'id=''class='col-md-3 scaleStyle'style=''>
+			 			{{scale.name}}
+			 			
+			 			
+			 			</div>
+			 		
+			 		</div>
+			 	
+			 	</div>
+			
+			</div>
 		
+		</div>
+		<div id='guitarBoard'class='col-md-12'style='padding:0;border:1px solid black;height:30vh;'>
+			<div ng-show='lefty == false;'id=''class=''style='background:url(/images/guitar/fretboard.png)no-repeat;background-size:100% 100%;height:100%;background-position:center;'>
+				<g-String class='col-md-12'style='padding:0;position:relative;bottom:10%;'switched='noteSwitched'colors='{{scaleColors}}'scale='{{currentScale}}'notes='musicNotes'root='strings[0]'></g-String>
+
+				<g-String class='col-md-12'style='padding:0;position:relative;bottom:15%;'switched='noteSwitched'colors='{{scaleColors}}'scale='{{currentScale}}'notes='musicNotes'root='strings[1]'></g-String>
+
+				<g-String class='col-md-12'style='padding:0;position:relative;bottom:21%;'switched='noteSwitched'colors='{{scaleColors}}'scale='{{currentScale}}'notes='musicNotes'root='strings[2]'></g-String>
+
+				<g-String class='col-md-12'style='padding:0;position:relative;bottom:25%;'switched='noteSwitched'colors='{{scaleColors}}'scale='{{currentScale}}'notes='musicNotes'root='strings[3]'></g-String>
+
+				<g-String class='col-md-12'style='padding:0;position:relative;bottom:30%;'switched='noteSwitched'colors='{{scaleColors}}'scale='{{currentScale}}'notes='musicNotes'root='strings[4]'></g-String>
+
+				<g-String class='col-md-12'style='padding:0;position:relative;bottom:35%;'switched='noteSwitched'colors='{{scaleColors}}'scale='{{currentScale}}'notes='musicNotes'root='strings[5]'></g-String>
+			</div>
+			
+			<div ng-show='lefty == true;'id=''class=''style=''>
+				son
+			
+			</div>		
+		</div>
 	</div>
 
 	<!-- MOBILE -->

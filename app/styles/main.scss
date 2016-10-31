@@ -79,7 +79,8 @@ body {
   
 }
 
-/*RAW CSS */
+/*MDPI laptop displays */
+@media screen and (min-width:1280px) {
 
 #initialNav { 
 
@@ -144,37 +145,1513 @@ body {
   #desk {
     margin-top:2%;
 
-      #switches {
-        height:8vh;
-        #wrapper {
-            height:100%;
-            border-bottom:4px solid black;
-            padding:0;
-            .wrapperStyle {
-              font-size:2em;
-              height:100%;
-              
-              
-              &:hover { 
-                background:black;
-                color:white;
-                cursor:pointer;
-              }
-
-            }
-
-
-
-        }
-
-
-      }
 
 
   }
 
 
 }
+
+.guitarFret {
+         height:100%;
+         padding:0;
+
+
+         #desk {
+
+            .gFretControlSwitch {
+              font-size:2em;
+
+
+              #fretControlSwitch {
+                cursor:pointer;
+
+                &:hover{
+                  background:black;
+                  color:white;
+                }
+              }
+
+            }
+
+            #gFretExplain {
+              height:45vh;
+
+
+            }
+
+            #gFretControl {
+
+              
+              height:45vh;
+
+                #gFretStatus { 
+
+                  height:80%;
+                  
+
+                  #statusTuning {
+
+                    height:100%;
+
+                    #title{
+                      font-size:1.2em;
+                    }
+
+                    .stuffin {
+
+                      font-size:1.2em;
+                    }
+                        &:hover{
+
+                          background:black;
+                          color:white;
+                          cursor:pointer;
+
+                        }
+
+
+                  }
+
+                  #statusScale {
+
+                    height:100%;
+
+                    font-size:1.1em;
+
+
+                    .statusScaleStyle {
+                      font-size:1.2em;
+                      margin-bottom:2%;
+                    }
+
+                    .scaleNoteNames {
+
+                      height:5vh;font-size:1em;
+
+
+
+                    }
+
+                    &:hover{ 
+                      background:black;
+                      color:white;
+                      cursor:pointer;
+                    }
+
+
+
+
+                  }
+
+                  #etcControls {
+                    height:100%;
+
+                    font-size:1.2em;
+
+                    .etcStyle {
+                      cursor:pointer;
+                      &:hover {
+                        background:black;
+                        color:white;
+                      }
+
+
+                    }
+
+                  }
+
+
+                }
+
+            }
+
+            #gFretGuitarControls {
+              height:100%;
+             
+              padding:0;
+              #tuner {
+                padding:0;
+
+                  .tunerSwitchStyle {
+                      height:4vh;
+                      font-size:1.3em;
+
+                      cursor:pointer;
+
+                      &:hover {
+
+                        background:black;
+                        color:white;
+                      }
+
+
+
+                  }
+
+                  #singleString {
+
+                    height:100%;
+
+                    .stringClass {
+                      padding:0;
+                      border-bottom:3px solid black;
+
+                      .stringNamed {
+                      font-size:1.3em;
+
+                       }
+
+                     .stringNote {
+                       font-size:1.2em;
+                        width:6%;
+                        padding:0;
+                        margin-left:2%;
+                       text-align:center;
+
+                        cursor:pointer;
+
+                        &:hover {
+                          background:black;
+                          color:white;
+
+                        }
+
+                    }
+
+                    }
+
+                  }
+
+                  #groupTune {
+
+                    .tuneStyle {
+
+                      height:7vh;
+                      
+                      font-size:1.2em;
+                      cursor:pointer;
+                      &:hover {
+
+                        background:black;
+                        color:white;
+                      }
+
+
+                    }
+
+
+                  }
+
+
+
+
+              }
+
+              #scaled {
+
+                #scaleRoot {
+                    margin-bottom:2%;
+                    .root {
+                      font-size:1.3em;
+                      border-bottom:4px solid black;
+                    }
+                    .scaleNotes {
+                      font-size:1.2em;
+                      text-align:center;
+                      cursor:pointer;
+                      &:hover {
+                        background:black;
+                        color:white;
+
+                      }
+
+                    }
+
+                }
+
+                #scalesChange {
+
+                  #title {
+                    font-size:1.3em;
+                  }
+
+                  .scaleStyle {
+
+                    cursor:pointer;
+                    height:5vh;
+                    font-size:1em;
+
+                    &:hover {
+                      background:black;
+                      color:white;
+                    }
+
+
+                  }
+
+
+
+                }
+
+
+              }
+
+
+
+
+            }
+
+
+            #guitarBoard {
+
+                padding:0;
+                height:30vh;
+
+
+                #rightHandboard {
+
+
+                    #Lowstring {
+                       padding:0;
+                      position:relative;
+                      bottom:8%;
+
+
+                    }
+                    #Bstring {
+                      padding:0;
+                      position:relative;
+                      bottom:12%;
+                    }
+                    #Gstring {
+                    padding:0;
+                    position:relative;
+                    bottom:14%;
+                    }
+                    #Dstring {
+                    padding:0;
+                    position:relative;
+                    bottom:19%;
+                    }
+                    #Astring {
+                      padding:0;
+                      position:relative;
+                      bottom:22%;
+                    }
+                    #Topstring {
+                      padding:0;
+                      position:relative;
+                      bottom:25%;
+                    }
+
+
+
+                }
+
+
+
+            }
+
+             #gString {
+              padding:0;
+
+              #desk {
+
+                width:100%;
+
+
+                #fret0 {
+                    width:0.4%;
+
+                }
+                #fret1 {
+                  width:1%;
+                  position:relative;
+                  left:2%;
+                  
+                }
+                #fret2 {
+                  position:relative;
+                  left:7%;
+                  width:1%;
+                }
+                #fret3 {
+                  width:1%;
+                  position:relative;
+                  left:12%;
+                }
+                #fret4 {
+                  position:relative;
+                  left:15.8%;
+                  width:1%;
+                }
+                #fret5 {
+width:1%;
+                  position:relative;
+                  left:19%;
+                }
+                #fret6 {
+                  position:relative;
+                  left:21%;
+                  width:1%;
+                }
+                #fret7 {
+width:1%;
+                    position:relative;
+                  left:24%;
+                }
+                #fret8 {
+                  position:relative;
+                  left:26%;
+                  width:1%;
+                }
+                #fret9 {
+width:1%;
+                  position:relative;
+                  left:28%;
+                }
+                #fret10 {
+width:1%;
+                  position:relative;
+                  left:30%;
+                }
+                #fret11 {
+width:1%;
+                  position:relative;
+                  left:32%;
+                }
+                #fret12 {
+width:1%;
+                  position:relative;
+                  left:33.5%;
+                }
+                #fret13 {
+width:1%;
+                  position:relative;
+                  left:35%;
+                }
+                #fret14 {
+width:1%;
+                  position:relative;
+                  left:36%;
+                }
+                #fret15 {
+width:1%;
+                  position:relative;
+                  left:37%;
+                }
+                #fret16 {
+width:1%;
+                  position:relative;
+                  left:37.3%;
+                }
+                #fret17 {
+width:1%;
+                  position:relative;
+                  left:38.6%;
+                }
+                #fret18 {
+width:1%;
+                  position:relative;
+                  left:39%;
+                }
+                #fret19 {
+width:1%;
+                  position:relative;
+                  left:40%;
+                }
+                #fret20 {
+width:1%;
+                  position:relative;
+                  left:40.5%;
+                }
+                #fret21 {
+width:1%;
+                  position:relative;
+                  left:41%;
+                }
+                #fret22{
+width:1%;
+                  position:relative;
+                  left:41.2%;
+                }
+                #fret23 {
+                  width:1%;
+                  position:relative;
+                  left:41.3%;
+                }
+                #fret24 {
+width:1%;
+                  position:relative;
+                  left:41.3%;
+                }
+
+
+              }
+
+            }
+
+         }
+      }
+
+}
+
+/*Most Macbooks and Safari*/
+
+@media screen and (min-width:1440px) {
+
+#initialNav { 
+
+    border-bottom:3px solid black;
+    height:10vh;
+    padding:0;
+
+    font-family:'Blockletter';
+
+    #navMenu{
+
+       height:100%;
+       padding:0;
+
+
+        #desk {
+
+         height:100%;
+
+
+         #mainLogo { 
+            padding-left:2%;
+            background:url(/images/logos/mainLogo.svg)no-repeat;
+            background-size:60% 100%;
+            background-position:10%;
+            height:100%;
+
+         }
+
+         .siteLinkStyle {
+            font-size:2em;
+            
+           
+            height:100%;
+
+            color:black;
+
+            text-decoration: none;
+
+            &:hover{
+              background:black;
+              color:white;
+              cursor:pointer;
+              text-decoration: none;
+
+            }
+         }
+     
+
+      } 
+
+
+    }
+
+
+}
+
+
+#frets {
+
+
+  #desk {
+    margin-top:2%;
+
+
+
+  }
+
+
+}
+
+.guitarFret {
+         height:100%;
+         padding:0;
+
+
+         #desk {
+
+            .gFretControlSwitch {
+              font-size:2em;
+
+
+              #fretControlSwitch {
+                cursor:pointer;
+
+                &:hover{
+                  background:black;
+                  color:white;
+                }
+              }
+
+            }
+
+            #gFretControl {
+
+              
+              height:45vh;
+
+                #gFretStatus { 
+
+                  height:80%;
+                  
+
+                  #statusTuning {
+
+                    height:100%;
+
+                    #title{
+                      font-size:1.2em;
+                    }
+
+                    .stuffin {
+
+                      font-size:1.3em;
+                    }
+                        &:hover{
+
+                          background:black;
+                          color:white;
+                          cursor:pointer;
+
+                        }
+
+
+                  }
+
+                  #statusScale {
+
+                    height:100%;
+
+                    font-size:1.1em;
+
+
+                    .statusScaleStyle {
+                      font-size:1.2em;
+                      margin-bottom:2%;
+                    }
+
+                    .scaleNoteNames {
+
+                      height:5vh;font-size:1em;
+
+
+
+                    }
+
+                    &:hover{ 
+                      background:black;
+                      color:white;
+
+                    }
+
+
+
+
+                  }
+
+                  #etcControls {
+                    height:100%;
+
+                    font-size:1.5em;
+
+                    .etcStyle {
+                      cursor:pointer;
+                      &:hover {
+                        background:black;
+                        color:white;
+                      }
+
+
+                    }
+
+                  }
+
+
+                }
+
+            }
+
+            #gFretGuitarControls {
+              height:100%;
+             
+              padding:0;
+              #tuner {
+                padding:0;
+
+                  .tunerSwitchStyle {
+                      height:4vh;
+                      font-size:1.3em;
+
+                      cursor:pointer;
+
+                      &:hover {
+
+                        background:black;
+                        color:white;
+                      }
+
+
+
+                  }
+
+                  #singleString {
+
+                    height:100%;
+
+                    .stringClass {
+                      padding:0;
+                      border-bottom:3px solid black;
+
+                      .stringNamed {
+                      font-size:1.3em;
+
+                       }
+
+                     .stringNote {
+                       font-size:1.2em;
+                        width:6%;
+                        padding:0;
+                        margin-left:2%;
+                       text-align:center;
+
+                        cursor:pointer;
+
+                        &:hover {
+                          background:black;
+                          color:white;
+
+                        }
+
+                    }
+
+                    }
+
+                  }
+
+                  #groupTune {
+
+                    .tuneStyle {
+
+                      height:7vh;
+                      
+                      font-size:1.2em;
+                      cursor:pointer;
+                      &:hover {
+
+                        background:black;
+                        color:white;
+                      }
+
+
+                    }
+
+
+                  }
+
+
+
+
+              }
+
+              #scaled {
+
+                #scaleRoot {
+                    margin-bottom:2%;
+                    .root {
+                      font-size:1.3em;
+                      border-bottom:4px solid black;
+                    }
+                    .scaleNotes {
+                      font-size:1.2em;
+                      text-align:center;
+                      cursor:pointer;
+                      &:hover {
+                        background:black;
+                        color:white;
+
+                      }
+
+                    }
+
+                }
+
+                #scalesChange {
+
+                  #title {
+                    font-size:1.3em;
+                  }
+
+                  .scaleStyle {
+
+                    cursor:pointer;
+                    height:4vh;
+                    font-size:1.2em;
+
+                    &:hover {
+                      background:black;
+                      color:white;
+                    }
+
+
+                  }
+
+
+
+                }
+
+
+              }
+
+
+
+
+            }
+
+
+            #guitarBoard {
+
+                padding:0;
+                height:30vh;
+
+
+                #rightHandboard {
+
+
+                    #Lowstring {
+                       padding:0;
+                      position:relative;
+                      bottom:8%;
+
+
+                    }
+                    #Bstring {
+                      padding:0;
+                      position:relative;
+                      bottom:12%;
+                    }
+                    #Gstring {
+                    padding:0;
+                    position:relative;
+                    bottom:14%;
+                    }
+                    #Dstring {
+                    padding:0;
+                    position:relative;
+                    bottom:19%;
+                    }
+                    #Astring {
+                      padding:0;
+                      position:relative;
+                      bottom:22%;
+                    }
+                    #Topstring {
+                      padding:0;
+                      position:relative;
+                      bottom:25%;
+                    }
+
+
+
+                }
+
+
+
+            }
+
+             #gString {
+              padding:0;
+
+              #desk {
+
+                width:100%;
+
+
+                #fret0 {
+                    width:1%;
+
+                }
+                #fret1 {
+                  width:2%;
+                  position:relative;
+                  left:3%;
+                  
+                }
+                #fret2 {
+                  position:relative;
+                  left:7%;
+                  width:2%;
+                }
+                #fret3 {
+                  width:2%;
+                  position:relative;
+                  left:12%;
+                }
+                #fret4 {
+                  position:relative;
+                  left:15.8%;
+                  width:2%;
+                }
+                #fret5 {
+width:2%;
+                  position:relative;
+                  left:20%;
+                }
+                #fret6 {
+                  position:relative;
+                  left:23%;
+                  width:2%;
+                }
+                #fret7 {
+width:2%;
+                    position:relative;
+                  left:26%;
+                }
+                #fret8 {
+                  position:relative;
+                  left:28%;
+                  width:2%;
+                }
+                #fret9 {
+width:2%;
+                  position:relative;
+                  left:31%;
+                }
+                #fret10 {
+width:2%;
+                  position:relative;
+                  left:34%;
+                }
+                #fret11 {
+width:2%;
+                  position:relative;
+                  left:35%;
+                }
+                #fret12 {
+width:2%;
+                  position:relative;
+                  left:36.5%;
+                }
+                #fret13 {
+width:2%;
+                  position:relative;
+                  left:38%;
+                }
+                #fret14 {
+width:2%;
+                  position:relative;
+                  left:39%;
+                }
+                #fret15 {
+width:2%;
+                  position:relative;
+                  left:40.3%;
+                }
+                #fret16 {
+width:2%;
+                  position:relative;
+                  left:41.5%;
+                }
+                #fret17 {
+width:2%;
+                  position:relative;
+                  left:42.6%;
+                }
+                #fret18 {
+width:2%;
+                  position:relative;
+                  left:44%;
+                }
+                #fret19 {
+width:2%;
+                  position:relative;
+                  left:45%;
+                }
+                #fret20 {
+width:2%;
+                  position:relative;
+                  left:45.5%;
+                }
+                #fret21 {
+width:2%;
+                  position:relative;
+                  left:46.2%;
+                }
+                #fret22{
+width:2%;
+                  position:relative;
+                  left:46.8%;
+                }
+                #fret23 {
+                  width:1%;
+                  position:relative;
+                  left:47%;
+                }
+                #fret24 {
+width:1%;
+                  position:relative;
+                  left:47.3%;
+                }
+
+
+              }
+
+            }
+
+         }
+      }
+
+}
+
+
+/*Large screen desktop displays */
+@media screen and (min-width:1920px) {
+
+#initialNav { 
+
+    border-bottom:3px solid black;
+    height:10vh;
+    padding:0;
+
+    font-family:'Blockletter';
+
+    #navMenu{
+
+       height:100%;
+       padding:0;
+
+
+        #desk {
+
+         height:100%;
+
+
+         #mainLogo { 
+            padding-left:2%;
+            background:url(/images/logos/mainLogo.svg)no-repeat;
+            background-size:60% 100%;
+            background-position:10%;
+            height:100%;
+
+         }
+
+         .siteLinkStyle {
+            font-size:2em;
+            
+           
+            height:100%;
+
+            color:black;
+
+            text-decoration: none;
+
+            &:hover{
+              background:black;
+              color:white;
+              cursor:pointer;
+              text-decoration: none;
+
+            }
+         }
+     
+
+      } 
+
+
+    }
+
+
+}
+
+
+#frets {
+
+
+  #desk {
+    margin-top:2%;
+
+
+
+  }
+
+
+}
+
+.guitarFret {
+         height:100%;
+         padding:0;
+
+
+         #desk {
+
+            .gFretControlSwitch {
+              font-size:2em;
+
+
+              #fretControlSwitch {
+                cursor:pointer;
+
+                &:hover{
+                  background:black;
+                  color:white;
+                }
+              }
+
+            }
+            #gFretExplain {
+              #howTo {
+                #title{ 
+
+                  font-size:2em;
+                  border-bottom:4px solid black;
+                }
+                #content {
+                  font-size:1.3em;
+
+                }
+
+              }
+
+              #whystuff {
+
+                 #title {
+                    font-size:2em;
+
+                    border-bottom:4px solid black;
+
+                 }
+
+                 #content {
+                    font-size:1.3em;
+
+                 }
+              }
+
+
+            }
+            #gFretControl {
+
+              
+              height:40vh;
+
+                #gFretStatus { 
+
+                  height:80%;
+                  
+
+                  #statusTuning {
+
+                    height:100%;
+
+                    #title{
+                      font-size:1.2em;
+                    }
+
+                    .stuffin {
+
+                      font-size:1.5em;
+                    }
+                        &:hover{
+
+                          background:black;
+                          color:white;
+                          cursor:pointer;
+
+                        }
+
+
+                  }
+
+                  #statusScale {
+
+                    height:100%;
+
+                    font-size:1.2em;
+
+
+                    .statusScaleStyle {
+                      font-size:1.2em;
+                    }
+
+                    .scaleNoteNames {
+
+                      height:5vh;font-size:1em;
+
+
+
+                    }
+
+                    &:hover{ 
+                      background:black;
+                      color:white;
+
+                    }
+
+
+
+
+                  }
+
+                  #etcControls {
+                    height:100%;
+
+                    font-size:1.5em;
+
+                    .etcStyle {
+                      cursor:pointer;
+                      &:hover {
+                        background:black;
+                        color:white;
+                      }
+
+
+                    }
+
+                  }
+
+
+                }
+
+            }
+
+            #gFretGuitarControls {
+              height:100%;
+             
+              padding:0;
+              #tuner {
+                padding:0;
+
+                  .tunerSwitchStyle {
+                      height:4vh;
+                      font-size:1.3em;
+
+                      cursor:pointer;
+
+                      &:hover {
+
+                        background:black;
+                        color:white;
+                      }
+
+
+
+                  }
+
+                  #singleString {
+
+                    height:100%;
+
+                    .stringClass {
+                      padding:0;
+                      border-bottom:3px solid black;
+
+                      .stringNamed {
+                      font-size:1.3em;
+
+                       }
+
+                     .stringNote {
+                       font-size:1.2em;
+                        width:6%;
+                        padding:0;
+                        margin-left:2%;
+                       text-align:center;
+
+                        cursor:pointer;
+
+                        &:hover {
+                          background:black;
+                          color:white;
+
+                        }
+
+                    }
+
+                    }
+
+                  }
+
+                  #groupTune {
+
+                    .tuneStyle {
+
+                      height:7vh;
+                      
+                      font-size:1.2em;
+                      cursor:pointer;
+                      &:hover {
+
+                        background:black;
+                        color:white;
+                      }
+
+
+                    }
+
+
+                  }
+
+
+
+
+              }
+
+              #scaled {
+
+                #scaleRoot {
+                    margin-bottom:2%;
+                    .root {
+                      font-size:1.3em;
+                      border-bottom:4px solid black;
+                    }
+                    .scaleNotes {
+                      font-size:1.2em;
+                      text-align:center;
+                      cursor:pointer;
+                      &:hover {
+                        background:black;
+                        color:white;
+
+                      }
+
+                    }
+
+                }
+
+                #scalesChange {
+
+                  #title {
+                    font-size:1.3em;
+                  }
+
+                  .scaleStyle {
+
+                    cursor:pointer;
+                    height:4vh;
+                    font-size:1.2em;
+
+                    &:hover {
+                      background:black;
+                      color:white;
+                    }
+
+
+                  }
+
+
+
+                }
+
+
+              }
+
+
+
+
+            }
+
+
+            #guitarBoard {
+
+                padding:0;
+                height:30vh;
+
+
+                #rightHandboard {
+
+
+                    #Lowstring {
+                       padding:0;
+                      position:relative;
+                      bottom:8%;
+
+
+                    }
+                    #Bstring {
+                      padding:0;
+                      position:relative;
+                      bottom:12%;
+                    }
+                    #Gstring {
+                    padding:0;
+                    position:relative;
+                    bottom:14%;
+                    }
+                    #Dstring {
+                    padding:0;
+                    position:relative;
+                    bottom:19%;
+                    }
+                    #Astring {
+                      padding:0;
+                      position:relative;
+                      bottom:22%;
+                    }
+                    #Topstring {
+                      padding:0;
+                      position:relative;
+                      bottom:25%;
+                    }
+
+
+
+                }
+
+
+
+            }
+
+            #gString {
+              padding:0;
+
+              #desk {
+
+                width:100%;
+
+
+                #fret0 {
+                    width:1%;
+
+                }
+                #fret1 {
+                  width:2%;
+                  position:relative;
+                  left:3%;
+                  
+                }
+                #fret2 {
+                  position:relative;
+                  left:8%;
+                  width:2%;
+                }
+                #fret3 {
+                  width:2%;
+                  position:relative;
+                  left:13.5%;
+                }
+                #fret4 {
+                  position:relative;
+                  left:17.5%;
+                  width:2%;
+                }
+                #fret5 {
+width:2%;
+                  position:relative;
+                  left:21%;
+                }
+                #fret6 {
+                  position:relative;
+                  left:24.3%;
+                  width:2%;
+                }
+                #fret7 {
+width:2%;
+                    position:relative;
+                  left:27%;
+                }
+                #fret8 {
+                  position:relative;
+                  left:29.7%;
+                  width:2%;
+                }
+                #fret9 {
+width:2%;
+                  position:relative;
+                  left:32%;
+                }
+                #fret10 {
+width:2%;
+                  position:relative;
+                  left:34.2%;
+                }
+                #fret11 {
+width:2%;
+                  position:relative;
+                  left:36.2%;
+                }
+                #fret12 {
+width:2%;
+                  position:relative;
+                  left:38%;
+                }
+                #fret13 {
+width:2%;
+                  position:relative;
+                  left:39.5%;
+                }
+                #fret14 {
+width:2%;
+                  position:relative;
+                  left:40.8%;
+                }
+                #fret15 {
+width:2%;
+                  position:relative;
+                  left:42.3%;
+                }
+                #fret16 {
+width:2%;
+                  position:relative;
+                  left:43.5%;
+                }
+                #fret17 {
+width:2%;
+                  position:relative;
+                  left:44.6%;
+                }
+                #fret18 {
+width:2%;
+                  position:relative;
+                  left:45.8%;
+                }
+                #fret19 {
+width:2%;
+                  position:relative;
+                  left:46.95%;
+                }
+                #fret20 {
+width:2%;
+                  position:relative;
+                  left:47.8%;
+                }
+                #fret21 {
+width:2%;
+                  position:relative;
+                  left:48.33%;
+                }
+                #fret22{
+width:2%;
+                  position:relative;
+                  left:48.8%;
+                }
+                #fret23 {
+
+                  position:relative;
+                  left:49.3%;
+                }
+                #fret24 {
+width:2%;
+                  position:relative;
+                  left:49.5%;
+                }
+
+
+              }
+
+            }
+
+         }
+      }
+
+}
+
 
 .highLight {
 

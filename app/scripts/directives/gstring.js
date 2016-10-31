@@ -15,7 +15,7 @@ angular.module('newGuitarV2App')
       	notes: '=notes',
       	root: '=root',
       	scale: '@scale',
-      	chord:'@chord',
+    	colors: '@colors',
       	switched: '=switched'
       },
       link: function postLink(scope, element, attrs) {

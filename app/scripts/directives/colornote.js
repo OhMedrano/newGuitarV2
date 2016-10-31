@@ -2,7 +2,7 @@
 
 /**
  * @ngdoc directive
- * @name newGuitarV2App.directive:colorNote
+ * @name newGuitarApp.directive:colorNote
  * @description
  * # colorNote
  */
@@ -21,14 +21,14 @@ angular.module('newGuitarV2App')
         		element.css('background-color','transparent');
         		element.css('color','white');
         		element.css('border','1px none');
-        		element.css('padding','5px 5px');
+        		
 
         		for(var x=0;x<=selScale.length-1;x++){
         			if(selNote == selScale[x]){
         				element.css('background-color',scope.colors[x]);
         				element.css('color','black');
         				element.css('border','1px none');
-        				element.css('border-radius','50%');
+        				
         				element.css('background-blend-mode','color-dodge');
 
         			}
@@ -37,7 +37,7 @@ angular.module('newGuitarV2App')
 
         	}
         
-        
+        	console.log(scope.scale,scope.note,scope.colors);
        
         	scope.$watchGroup(['scale','note','colors'],function(newVal,oldVal){
         		scope.scale = angular.fromJson(newVal[0]);

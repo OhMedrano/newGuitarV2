@@ -12,29 +12,37 @@ angular.module('newGuitarV2App')
       templateUrl:'templates/guitarFret.html',
       restrict: 'E',
       link: function postLink(scope, element, attrs) {
+        	
+        	scope.controlSwitch = true;
+        	scope.guitarSwitch = true; 
+        	scope.leftySwitch = false;
+        	scope.tuningSwitch = true;
+
+
+
         scope.musicSharps = ['A','A#','B','C','C#','D','D#','E','F','F#','G','G#'];
       		scope.musicFlats = ['A','Bb','B','C','Db','D','Eb','E','F','Gb','G','Ab'];
-      		scope.musicNotes = scope.musicFlats;
+      		scope.musicNotes = scope.musicSharps;
       		scope.music = 3;
       		scope.musicRoot = 3; //Starts off at C
       		scope.stringName = ['Top E','B','G','D','A','Bottom E'];
       		scope.lefty = false;
-      		  scope.noteSwitched = true;
+      		  scope.noteSwitched = false;
       		scope.strings = [7,2,10,5,0,7];
 
       		scope.scaleIntervals = [
       								{'name':'Tonic','secName':'Octave','colors':'F2291A'},
-      								{'name':'Minor Second','secName':'Minor Ninth','colors':'E58324'},
-      								{'name':'Major Second','secName':'Major Ninth','colors':'FCB11B'},
-      								{'name':'Minor Third','secName':'Minor Tenth','colors':'F2CE33'},
-      								{'name':'Major Third','secName':'Major Tenth','colors':'FCED2F'},
-      								{'name':'Perfect Fourth','secName':'Perfect 11th','colors':'BCE536'},
-      								{'name':'Augmented Fourth','secName':'Augmented 11th','colors':'64FC2F'},
-      								{'name':'Perfect Fifth','secName':'Perfect 12th','colors':'33E5BC'},
-      								{'name':'Minor Sixth','secName':'Minor 13th','colors':'2b61f2'},
-      								{'name':'Major Sixth','secName':'Major 13th','colors':'8F34E5'},
-      								{'name':'Minor Seventh','secName':'Minor 14th','colors':'E92DFC'},
-      								{'name':'Major Seventh','secName':'Major 14th','colors':'F24493'}  								
+      								{'name':'Minor  Second','secName':'Minor Ninth','colors':'E58324'},
+      								{'name':'Major  Second','secName':'Major Ninth','colors':'FCB11B'},
+      								{'name':'Minor  Third','secName':'Minor Tenth','colors':'F2CE33'},
+      								{'name':'Major  Third','secName':'Major Tenth','colors':'FCED2F'},
+      								{'name':'Perfect  Fourth','secName':'Perfect 11th','colors':'BCE536'},
+      								{'name':'Augmented  Fourth','secName':'Augmented 11th','colors':'64FC2F'},
+      								{'name':'Perfect  Fifth','secName':'Perfect 12th','colors':'33E5BC'},
+      								{'name':'Minor  Sixth','secName':'Minor 13th','colors':'2b61f2'},
+      								{'name':'Major  Sixth','secName':'Major 13th','colors':'8F34E5'},
+      								{'name':'Minor  Seventh','secName':'Minor 14th','colors':'E92DFC'},
+      								{'name':'Major  Seventh','secName':'Major 14th','colors':'F24493'}  								
       		]
       		scope.allScale = [		  
                           			        {'name':'Major/Ionian','scale':[0,2,4,5,7,9,11]},
@@ -82,20 +90,25 @@ angular.module('newGuitarV2App')
 
 
       		];
+      		const named = 'custom';
+      		scope.tuneName = angular.copy(named);
       		scope.currentScale = scope.allScale[0].scale;
       		scope.pickedScale = [];
       		scope.scaleName;
       		scope.scaleInterNames;
       		scope.scaleColors;
-
+      		
       		scope.changeNote = function(string,note){
       			
+      			scope.tuneName = angular.copy(named);
 
       			scope.strings[string] = angular.copy(this.$index);
       			
       			
       		};
-      		scope.changeGroup = function(chang){
+      		scope.changeGroup = function(chang,name){
+      			
+      			scope.tuneName = angular.copy(name);
       			scope.changeTuning = chang;
       			scope.strings = angular.copy(scope.changeTuning);
 
@@ -149,6 +162,8 @@ angular.module('newGuitarV2App')
 
 
       		};
+
+      		scope.changeScale(pickedScale,musicRoot);
       }
     };
   });

@@ -13,12 +13,21 @@ angular.module('newGuitarV2App')
       restrict: 'E',
       link: function postLink(scope, element, attrs) {
         	
-        	scope.controlSwitch = true;
+        	scope.controlSwitch = false;
         	scope.guitarSwitch = true; 
         	scope.leftySwitch = false;
-        	scope.tuningSwitch = true;
+        	scope.tuningSwitch = false;
+          scope.indexVal = 0;
+          scope.changeIndex = function(string){
+
+            scope.indexVal = string;
+
+            console.log(scope.indexVal)
 
 
+          };
+
+          
 
         scope.musicSharps = ['A','A#','B','C','C#','D','D#','E','F','F#','G','G#'];
       		scope.musicFlats = ['A','Bb','B','C','Db','D','Eb','E','F','Gb','G','Ab'];

@@ -1,7 +1,7 @@
-<div id='navMenu'class=''style=''>
+<div id='navMenu'class=''style='padding:0;'>
 
 	<!-- DESKTOP -->
-	<div id='desk'class='hidden-sm hidden-xs'style='b'>
+	<div id='desk'class='hidden-sm hidden-xs'style=''>
 		
 		<div id='mainLogo'class='col-md-6'style=''>
 		
@@ -16,8 +16,28 @@
 	</div>
 
 	<!-- MOBILE -->
-	<div id='mobile'class='hidden-md hidden-lg'style=''>
-	
+	<div id='mobile'class='hidden-md hidden-lg'style='padding:0;'ng-init='mobileNav = false;'>
+		<div id='closed'class='col-xs-12 col-sm-12'style='padding:0;'>
+			<div ng-click='mobileNav = !mobileNav'id='button'class='col-xs-4 glyphicon glyphicon-align-justify'style='float:right;font-size:3.5em;text-align:right;'>
+				
+			
+			</div>
+
+			<div ng-show='mobileNav == true'id='opened'class='col-xs-12 col-sm-12'style='height:50vh;'ng-click='mobileNav = false'>
+				 <a ng-href='{{link.web}}'ng-repeat='link in siteLinks track by $index'id=''class='col-xs-8'ng-class-odd="'odd'"ng-class-even="'even'">
+				 {{link.name}}
+
+				 </a>
+			
+
+				<div id='mainLogo'class='col-xs-12'style=''>
+				
+				
+				</div>
+			</div>
+
+			
+		</div>
 	
 	</div>
 

@@ -74,6 +74,70 @@ body {
   }
 }
 
+
+/*Mobile RAW CSS*/
+#navMenu {
+  #mobile {
+
+    #opened {
+
+      #mainLogo {
+        background:url(/images/logos/mainLogo.svg)no-repeat;
+        height:10vh;
+        background-size:100% 100%;
+        
+        position:relative;
+        top:14.75vh;
+
+      }
+    }
+  }
+}
+.odd {
+  float:right;
+  font-size:1.5em;
+  text-align:right;
+  color:black;
+  height:10vh;
+  border-bottom:3px solid black;
+  border-left:3px solid black;
+
+  margin-top:5%;
+
+    &:hover {
+      background:black;
+      color:white;
+      cursor:pointer;
+    }
+
+}
+
+.even {
+  float:left;
+  font-size:1.5em;
+  text-align:left;
+  color:black;
+  height:10vh;
+  border-bottom:3px solid black;
+  border-left:3px solid black;
+
+  margin-top:5%;
+
+    &:hover {
+      background:black;
+      color:white;
+      cursor:pointer;
+    }
+}
+
+
+
+
+
+
+
+
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   
@@ -1467,34 +1531,34 @@ width:1%;
                 #rightHandboard {
 
 
-                    #Lowstring {
+                    .Lowstring {
                        padding:0;
                       position:relative;
                       bottom:8%;
 
 
                     }
-                    #Bstring {
+                    .Bstring {
                       padding:0;
                       position:relative;
                       bottom:12%;
                     }
-                    #Gstring {
+                    .Gstring {
                     padding:0;
                     position:relative;
                     bottom:14%;
                     }
-                    #Dstring {
+                    .Dstring {
                     padding:0;
                     position:relative;
                     bottom:19%;
                     }
-                    #Astring {
+                    .Astring {
                       padding:0;
                       position:relative;
                       bottom:22%;
                     }
-                    #Topstring {
+                    .Topstring {
                       padding:0;
                       position:relative;
                       bottom:25%;
@@ -1504,9 +1568,186 @@ width:1%;
 
                 }
 
+                #leftHandboard {
 
+                    .Lowstring {
+                       padding:0;
+                      position:relative;
+                      bottom:8%;
+
+
+                    }
+                    .Bstring {
+                      padding:0;
+                      position:relative;
+                      bottom:12%;
+                    }
+                    .Gstring {
+                    padding:0;
+                    position:relative;
+                    bottom:14%;
+                    }
+                    .Dstring {
+                    padding:0;
+                    position:relative;
+                    bottom:19%;
+                    }
+                    .Astring {
+                      padding:0;
+                      position:relative;
+                      bottom:22%;
+                    }
+                    .Topstring {
+                      padding:0;
+                      position:relative;
+                      bottom:25%;
+                    }
+
+                }
 
             }
+
+            #leftString {
+              padding:0;
+
+                          #desk {
+
+                width:100%;
+
+
+                #fret0 {
+                    position:relative;
+                    left:1%;
+                    width:1%;
+
+                }
+                #fret1 {
+                  width:2%;
+                  position:relative;
+                  left:1.5%;
+                  
+                }
+                #fret2 {
+                  position:relative;
+                  left:2%;
+                  width:2%;
+                }
+                #fret3 {
+                  width:2%;
+                  position:relative;
+                  left:2.5%;
+                }
+                #fret4 {
+                  position:relative;
+                  left:3.1%;
+                  width:2%;
+                }
+                #fret5 {
+width:2%;
+                  position:relative;
+                  left:4%;
+                }
+                #fret6 {
+                  position:relative;
+                  left:5.3%;
+                  width:2%;
+                }
+                #fret7 {
+width:2%;
+                    position:relative;
+                  left:6%;
+                }
+                #fret8 {
+                  position:relative;
+                  left:7.7%;
+                  width:2%;
+                }
+                #fret9 {
+width:2%;
+                  position:relative;
+                  left:8.5%;
+                }
+                #fret10 {
+width:2%;
+                  position:relative;
+                  left:9.9%;
+                }
+                #fret11 {
+width:2%;
+                  position:relative;
+                  left:11.2%;
+                }
+                #fret12 {
+width:2%;
+                  position:relative;
+                  left:13%;
+                }
+                #fret13 {
+width:2%;
+                  position:relative;
+                  left:14.5%;
+                }
+                #fret14 {
+width:2%;
+                  position:relative;
+                  left:16.5%;
+                }
+                #fret15 {
+width:2%;
+                  position:relative;
+                  left:18.8%;
+                }
+                #fret16 {
+width:2%;
+                  position:relative;
+                  left:21%;
+                }
+                #fret17 {
+width:2%;
+                  position:relative;
+                  left:23.6%;
+                }
+                #fret18 {
+width:2%;
+                  position:relative;
+                  left:26.8%;
+                }
+                #fret19 {
+width:2%;
+                  position:relative;
+                  left:28.95%;
+                }
+                #fret20 {
+width:2%;
+                  position:relative;
+                  left:32.8%;
+                }
+                #fret21 {
+width:2%;
+                  position:relative;
+                  left:37.33%;
+                }
+                #fret22{
+width:2%;
+                  position:relative;
+                  left:41.8%;
+                }
+                #fret23 {
+
+                  position:relative;
+                  left:47.3%;
+                }
+                #fret24 {
+width:2%;
+                  position:relative;
+                  left:50.5%;
+                }
+
+
+              }
+
+            }
+
 
             #gString {
               padding:0;

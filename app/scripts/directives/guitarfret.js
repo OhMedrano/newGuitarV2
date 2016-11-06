@@ -102,8 +102,8 @@ angular.module('newGuitarV2App')
       		const named = 'custom';
       		scope.tuneName = angular.copy(named);
       		scope.currentScale = scope.allScale[0].scale;
-      		scope.pickedScale = [];
-      		scope.scaleName;
+      		scope.pickedScale = angular.copy(scope.allScale[0].scale);
+      		scope.scaleName = angular.copy(scope.allScale[0].name);
       		scope.scaleInterNames;
       		scope.scaleColors;
       		

@@ -196,7 +196,7 @@
 			 		</div>
 			 		<div id='scalesChange'class='col-md-12'style=''>
 			 			<div id='title'class='col-md-12'style='border-bottom:4px solid black;'>
-			 			Scales:
+			 			Scales: 
 			 			
 			 			</div>
 			 			<div ng-click='pickScale(scale)'ng-repeat='scale in allScale track by $index'id=''class='col-md-3 scaleStyle'style=''ng-class='{highLight:scale.name == scaleName}'>
@@ -214,31 +214,31 @@
 		</div>
 		<div id='guitarBoard'class='col-md-12'style='padding:0;height:30vh;'>
 			<div ng-show='lefty == false;'id='rightHandboard'class=''style='background:url(/images/guitar/fretboard.png)no-repeat;background-size:100% 100%;height:100%;background-position:center;'>
-				<g-String id=''class='Lowstring col-md-12'style=''switched='noteSwitched'colors='{{scaleColors}}'scale='{{currentScale}}'notes='musicNotes'root='strings[0]'></g-String>
+				<g-String id=''class='Lowstring col-md-12'style='padding:0;'switched='noteSwitched'colors='{{scaleColors}}'scale='{{currentScale}}'notes='musicNotes'root='strings[0]'></g-String>
 
-				<g-String id=''class='Bstring col-md-12'style=''switched='noteSwitched'colors='{{scaleColors}}'scale='{{currentScale}}'notes='musicNotes'root='strings[1]'></g-String>
+				<g-String id=''class='Bstring col-md-12'style='padding:0;'switched='noteSwitched'colors='{{scaleColors}}'scale='{{currentScale}}'notes='musicNotes'root='strings[1]'></g-String>
 
-				<g-String id=''class='Gstring col-md-12'style=''switched='noteSwitched'colors='{{scaleColors}}'scale='{{currentScale}}'notes='musicNotes'root='strings[2]'></g-String>
+				<g-String id=''class='Gstring col-md-12'style='padding:0;'switched='noteSwitched'colors='{{scaleColors}}'scale='{{currentScale}}'notes='musicNotes'root='strings[2]'></g-String>
 
-				<g-String id=''class='Dstring col-md-12'style=''switched='noteSwitched'colors='{{scaleColors}}'scale='{{currentScale}}'notes='musicNotes'root='strings[3]'></g-String>
+				<g-String id=''class='Dstring col-md-12'style='padding:0;'switched='noteSwitched'colors='{{scaleColors}}'scale='{{currentScale}}'notes='musicNotes'root='strings[3]'></g-String>
 
-				<g-String id=''class='Astring col-md-12'style=''switched='noteSwitched'colors='{{scaleColors}}'scale='{{currentScale}}'notes='musicNotes'root='strings[4]'></g-String>
+				<g-String id=''class='Astring col-md-12'style='padding:0;'switched='noteSwitched'colors='{{scaleColors}}'scale='{{currentScale}}'notes='musicNotes'root='strings[4]'></g-String>
 
-				<g-String id=''class='Topstring col-md-12'style=''switched='noteSwitched'colors='{{scaleColors}}'scale='{{currentScale}}'notes='musicNotes'root='strings[5]'></g-String>
+				<g-String id=''class='Topstring col-md-12'style='padding:0;'switched='noteSwitched'colors='{{scaleColors}}'scale='{{currentScale}}'notes='musicNotes'root='strings[5]'></g-String>
 			</div>
 			
 			<div ng-show='lefty == true;'id='leftHandboard'class=''style='background:url(/images/guitar/leftFretboard.png)no-repeat;background-size:100%100%;height:100%;background-position:center;'>
-				<left-String id=''class='Lowstring col-md-12'style=''switched='noteSwitched'colors='{{scaleColors}}'scale='{{currentScale}}'notes='musicNotes'root='strings[0]'></left-String>
+				<left-String id=''class='Lowstring col-md-12'style='padding:0;'switched='noteSwitched'colors='{{scaleColors}}'scale='{{currentScale}}'notes='musicNotes'root='strings[0]'></left-String>
 
-				<left-String id=''class='Bstring col-md-12'style=''switched='noteSwitched'colors='{{scaleColors}}'scale='{{currentScale}}'notes='musicNotes'root='strings[1]'></left-String>
+				<left-String id=''class='Bstring col-md-12'style='padding:0;'switched='noteSwitched'colors='{{scaleColors}}'scale='{{currentScale}}'notes='musicNotes'root='strings[1]'></left-String>
 
-				<left-String id=''class='Gstring col-md-12'style=''switched='noteSwitched'colors='{{scaleColors}}'scale='{{currentScale}}'notes='musicNotes'root='strings[2]'></left-String>
+				<left-String id=''class='Gstring col-md-12'style='padding:0;'switched='noteSwitched'colors='{{scaleColors}}'scale='{{currentScale}}'notes='musicNotes'root='strings[2]'></left-String>
 
-				<left-String id=''class='Dstring col-md-12'style=''switched='noteSwitched'colors='{{scaleColors}}'scale='{{currentScale}}'notes='musicNotes'root='strings[3]'></left-String>
+				<left-String id=''class='Dstring col-md-12'style='padding:0;'switched='noteSwitched'colors='{{scaleColors}}'scale='{{currentScale}}'notes='musicNotes'root='strings[3]'></left-String>
 
-				<left-String id=''class='Astring col-md-12'style=''switched='noteSwitched'colors='{{scaleColors}}'scale='{{currentScale}}'notes='musicNotes'root='strings[4]'></left-String>
+				<left-String id=''class='Astring col-md-12'style='padding:0;'switched='noteSwitched'colors='{{scaleColors}}'scale='{{currentScale}}'notes='musicNotes'root='strings[4]'></left-String>
 
-				<left-String id=''class='Topstring col-md-12'style=''switched='noteSwitched'colors='{{scaleColors}}'scale='{{currentScale}}'notes='musicNotes'root='strings[5]'></left-String>
+				<left-String id=''class='Topstring col-md-12'style='padding:0;'switched='noteSwitched'colors='{{scaleColors}}'scale='{{currentScale}}'notes='musicNotes'root='strings[5]'></left-String>
 			
 			</div>		
 		</div>
@@ -257,20 +257,21 @@
 			</div>
 		
 		</div>
-		<div ng-show='controlSwitch == false'id=''class='col-xs-12'style='height:80vh;'>
-			<div id=''class='col-xs-12'style=''>
-				<div id=''class='col-xs-6'style=''>
+		<div ng-show='controlSwitch == false'id=''class='col-xs-12'style='height:75vh;border:1px solid black;'>
+			<div id=''class='col-xs-12'style='padding:0;height:9vh;'>
+				<div id=''class='col-xs-6'style='padding:0;height:100%;'ng-click='guitarSwitch = true;'ng-class='{highLight:guitarSwitch == true};'>
 				<span class='col-xs-12'>Tuning: </span>
 				<span class='col-xs-12'>{{tuneName}}</span>
 				
 				</div>
-				<div id=''class='col-xs-6'style=''>
-				Scale: {{scaleName}}
+				<div id=''class='col-xs-6'style='padding:0;height:100%;'ng-click='guitarSwitch = false;'ng-class='{highLight:guitarSwitch == false};'>
+				<span class='col-xs-12'>Scale: {{musicNotes[musicRoot]}}</span>
+				<span class='col-xs-12'>{{scaleName}}</span>
 				
 				</div>
 			
 			</div>
-			<div id=''class=''style=''>
+			<div ng-show='guitarSwitch == true;'id=''class='col-xs-12'style='padding:0;'>
 			<div id=''class='col-xs-12'style=''>
 				<div id=''class='col-xs-6'style=''>
 				Tuning: 
@@ -334,9 +335,9 @@
 				
 				</div>
 
-				<div id=''class='col-xs-12'style='margin-top:10%;'>
+				<div id=''class='col-xs-12'style='margin-top:1%;'>
 					
-					<div id=''class='col-xs-12'style='height:8vh;margin-top:4%;'>
+					<div id=''class='col-xs-12'style='height:8vh;margin-top:2%;'>
 						<div id=''class='col-xs-8'style='border-bottom:3px solid black;margin-bottom:2%;'>
 						Music Notations
 						
@@ -384,15 +385,106 @@
 			</div>
 			
 			</div>
+			<div ng-show='guitarSwitch == false'id=''class='col-xs-12'style='padding:0;'>
+				<div id=''class='col-xs-12'style='height:30vh;padding:0;margin-top:5%;'>
+					<div id=''class='col-xs-12'style='border-bottom:3px solid black;font-size:1.2em;margin-bottom:1%;'>
+						<div id=''class='col-xs-4'style=''>
+						Scale: {{musicNotes[musicRoot]}}
+						
+						</div>
+						<div class="dropdown col-xs-8">
+ 						 <button class="btn btn-default dropdown-toggle col-xs-12" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  						  {{scaleName}}
+  						  <span class="caret"></span>
+ 						 </button>
+ 							 <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+    							<div ng-repeat='scale in allScale'id=''class='col-xs-6'style='font-size:1.1em;'ng-click='pickScale(scale)'>
+    								{{scale.name}}
+    							
+    							
+    							</div>
+ 							 </div>
+							</div>
+					
+					
+					</div>
+					<div ng-repeat='note in currentScale track by $index'id=''class='col-xs-6'style='height:6vh;background:{{scaleColors[$index]}};font-size:1.2em;'>
+					<p>{{musicNotes[note]}} {{scaleInterNames[$index]}}
+					
+					
+					</div>
+				
+				</div>
+				<div id=''class='col-xs-12'style='padding:0;'>
+					<div id=''class='col-xs-12'style='padding:0;'>
+						<div id=''class='col-xs-12'style='padding:0;'>
+							Select Root:
+						
+						</div>
+						<div ng-repeat='note in musicNotes track by $index'id=''class='col-xs-2'style='height:5vh;border:1px solid black;'ng-click='pickTone($index)'ng-class='{highLight:$index == musicRoot}'>
+							{{note}}
+						
+						
+						</div>
+					
+					</div>
+					<div id=''class='col-xs-12'style=''>
+						
+					</div>
+				
+				</div>
+			
+			</div>
 			
 		</div>
-		<div ng-show='controlSwitch == true'id=''class='col-xs-12'style='height:50vh;border:1px solid black;'>
-			Explaination
+		<div ng-show='controlSwitch == true'id=''class='col-xs-12'style='height:75vh;border:1px solid black;'>
+			<div id='howTo'class='col-xs-12'style=''>
+				<div id='title'class='col-xs-12'style='border-bottom:3px solid black; font-size:1.3em;'>
+				How to use
+				
+				</div>
+				<div id='content'class='col-xs-12'style=''>
+				Hit the controls tab, and pick between either the tuning or scales. 
+				<br>
+
+				The scale themselves are color coded by scale interval names, for you music theory folks. 
+				<br>
+				Change the notations by selecting the Flats or Sharps tab in the controls menu. 
+				<br>
+				Change for either Right-handed or Left-handed versions (I care about you lefties.)
+				
+				</div>
+			
+			</div>
+		
+			<div id='whystuff'class='col-xs-12'style=''>
+				<div id='title'class='col-md-12'style='border-bottom:3px solid black;font-size:1.3em;'>
+				Why use it
+				
+				</div>
+				<div id='content'class='col-xs-12 'style=''>
+				I made this because I was tired of trying to remember where my scales fell in a different tuning.
+				<br><br>
+				Figured it could be useful for other people so I decided to expand on it a bit more. 
+				<br><br>
+				This is made for the guitarist who has problems visualizing the notes on the fretboard, from beginner to experts. 
+				
+				</div>
+			
+			</div>
 		
 		</div>
-		<div id=''class=''style=''>
+		<div id=''class='col-xs-12'style='background:url(images/guitar/mobileFretboard.png)no-repeat;background-size:100% 100%;height:370vh;'>
+			<mobile-String switched='noteSwitched'colors='{{scaleColors}}'scale='{{currentScale}}'notes='musicNotes'root='strings[5]'class='col-xs-2' style=''></mobile-String>
+			<mobile-String switched='noteSwitched'colors='{{scaleColors}}'scale='{{currentScale}}'notes='musicNotes'root='strings[4]'class='col-xs-2' style=''></mobile-String>
+			<mobile-String switched='noteSwitched'colors='{{scaleColors}}'scale='{{currentScale}}'notes='musicNotes'root='strings[3]'class='col-xs-2' style=''></mobile-String>
+			<mobile-String switched='noteSwitched'colors='{{scaleColors}}'scale='{{currentScale}}'notes='musicNotes'root='strings[2]'class='col-xs-2' style=''></mobile-String>
+			<mobile-String switched='noteSwitched'colors='{{scaleColors}}'scale='{{currentScale}}'notes='musicNotes'root='strings[1]'class='col-xs-2' style=''></mobile-String>
+			<mobile-String switched='noteSwitched'colors='{{scaleColors}}'scale='{{currentScale}}'notes='musicNotes'root='strings[0]'class='col-xs-2' style=''></mobile-String>
 		
-		
+
+
+
 		</div>
 	
 	</div>
